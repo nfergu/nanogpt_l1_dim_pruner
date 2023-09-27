@@ -5,11 +5,11 @@ A fork of nanoGPT to provide a benchmark for [l1_dim_pruner](https://github.com/
 ## Usage
 
 ```
-pip3 install torch numpy transformers datasets wandb tqdm
+$ pip install torch numpy transformers datasets wandb tqdm
 ```
 
 ```
-$ python3 data/openwebtext/prepare.py
+$ python data/openwebtext/prepare.py
 ```
 
 ```
