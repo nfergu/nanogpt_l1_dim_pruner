@@ -4,6 +4,8 @@ A fork of nanoGPT to provide a benchmark for [l1_dim_pruner](https://github.com/
 
 ## Usage
 
+Using Python 3.10 or later:
+
 ```
 pip install torch numpy transformers datasets wandb tqdm
 ```
