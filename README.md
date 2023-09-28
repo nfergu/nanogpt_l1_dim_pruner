@@ -20,7 +20,7 @@ python data/openwebtext/prepare.py
 python train.py config/eval_gpt2_l1_dim_pruning.py --compile=False
 ```
 
-When this finishes you should see a validation loss of around *3.5*.
+When this finishes you should see a validation loss of around **3.5**.
 
 If you do not a have GPU append `--device=cpu` to the arguments, but this will take a long time to run (multiple hours probably).
 
@@ -34,7 +34,7 @@ To compare this to standard L1-norm pruning ([torch.nn.utils.prune.l1_unstructur
 python train.py config/eval_gpt2_l1_pruning.py --compile=False
 ```
 
-When this finishes you should see a validation loss of around *4.3*.
+When this finishes you should see a validation loss of around **4.3**.
 
 
 ### Unpruned
@@ -45,4 +45,4 @@ To compare this to the unpruned version:
 python train.py config/eval_gpt2.py --compile=False
 ```
 
-When this finishes you should see a validation loss of around *3.1*.
+When this finishes you should see a validation loss of around **3.1**.
