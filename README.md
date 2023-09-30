@@ -2,7 +2,7 @@
 
 A fork of [nanoGPT](https://github.com/karpathy/nanoGPT) to provide a benchmark for [l1_dim_pruner](https://github.com/nfergu/l1_dim_pruner).
 
-This prunes 50% of the weights in the fully-connected layers of a GPT-2 model. 
+This prunes 50% of the weights in the fully-connected layers of a GPT-2 model, along dimension 1 (the second dimension). 
 
 ## Installation
 
@@ -18,7 +18,7 @@ python data/openwebtext/prepare.py
 
 ## Benchmark
 
-To prune the model using the [l1_dim_pruner](https://github.com/nfergu/l1_dim_pruner) and report the validation loss:
+To prune a GPT-2 model using the [l1_dim_pruner](https://github.com/nfergu/l1_dim_pruner) and report the validation loss:
 
 ```
 python train.py config/eval_gpt2_l1_dim_pruning.py --compile=False
